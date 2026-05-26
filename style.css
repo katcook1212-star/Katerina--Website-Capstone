@@ -1,20 +1,112 @@
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease; /* animation */
+}
+nav a:hover {
+    color: rgb(251, 248, 248);
+}
+nav a:link {
+    color: rgb(249, 247, 247);
+    font-weight: 700;
+}
+nav a:visited {
+    color: rgb(16, 16, 16);
+}
+.hero p {
+    font-size: 1.2em;
+    font-style: italic;
+}
 body {
-    background-color: rgb(130, 127, 127);
+    background-color: rgb(255,219,231);
     color: rgb(18, 17, 17);
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.hero {
+    background: linear-gradient(
+        rgb(255,144,181),
+        rgb(255,219,231)
+    );
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    font-style: italic;
 }
 main {
-    background-color: rgb(130, 127, 127);
+    background-color: rgb(255,219,231);
+    line-height: 1.6; /* line-height property */
 }
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+/* HEADER */
 header {
-    background-color: rgb(94, 123, 180);
+    background-color: rgb(255,144,181);
+    color: rgb(60, 20, 40);
 }
-h1{
-    font-family:cursive;
+
+/* TEXT ALIGN + FONT STYLE */
+h1 {
+    font-family: cursive;
+    text-align: center;
+    font-style: italic;
+    font-size: 2.5em; /* em unit */
 }
+
+/* FONT WEIGHT PROPERTY */
 h2 {
-    color: rgb(59, 39, 129);
+    color: rgb(255,93,147);
+    font-weight: 700;
 }
+
+/* NESTED SELECTOR */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* PSEUDO-CLASS SELECTOR */
+nav ul li a:hover {
+    color: rgb(255, 200, 220);
+}
+
+/* STRONG ELEMENT */
+strong {
+    font-weight: bold;
+    color: rgb(120, 0, 60);
+}
+
+/* EM ELEMENT */
+em {
+    font-style: italic;
+    color: rgb(80, 30, 60);
+}
+
+/* FOOTER */
 footer {
-    background-color: rgb(94, 123, 180);
+    background-color: rgb(255,144,181);
+    text-align: center;
+    padding: 10px;
 }
