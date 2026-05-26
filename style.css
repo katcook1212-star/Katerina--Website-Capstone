@@ -65,8 +65,8 @@ main {
 header {
     background-color: rgb(255,144,181);
     color: rgb(60, 20, 40);
+    border-bottom: 5px solid rgb(255,93,147);
 }
-
 /* TEXT ALIGN + FONT STYLE */
 h1 {
     font-family: cursive;
@@ -102,6 +102,39 @@ strong {
 em {
     font-style: italic;
     color: rgb(80, 30, 60);
+}
+nav {
+    padding: 15px;
+}
+
+/* border properties */
+img {
+    border: 3px solid purple;
+}
+
+/* setting a single side */
+p {
+    margin-top: 30px;
+    padding-left: 10px;
+    border-bottom: 2px dashed pink;
+}
+
+/* width and height in percent */
+.banner {
+    width: 80%;
+    height: 50%;
+}
+
+/* class selector */
+.product {
+    background-color: lavender;
+    padding: 10px;
+}
+
+/* ID selector */
+#special-offer {
+    color: hotpink;
+    font-weight: bold;
 }
 
 /* FOOTER */
